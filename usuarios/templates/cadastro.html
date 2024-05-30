@@ -3,7 +3,7 @@
 
 {% block 'head' %}
     <link rel="stylesheet" href="{% static 'usuarios/css/usuarios.css' %}">
-{% endblock %}
+{% endblock 'head' %}
 
 {% block 'body' %}
 
@@ -50,7 +50,7 @@
                         <br>
 
                         <input type="submit" value="Cadastrar" class="btn btn-success btn-dark-color">
-                        
+                        <a href="{% url 'login' %}" class="btn btn-dark-color-outline">Já possuo uma conta</a>
                     </form>
                 </div>
 
